@@ -26,3 +26,9 @@ CSV → S3 (Raw) → AWS Glue ETL (PySpark) → S3 (Processed Parquet) → Athen
 SELECT customer_id, SUM(amount) 
 FROM processed_sales 
 GROUP BY customer_id;# aws-glue-etl-sales
+## What I Learned
+- Designed an end-to-end ETL pipeline on AWS
+- Used AWS Glue with PySpark for data transformation
+- Worked with Glue Crawlers and Data Catalog
+- Converted CSV data into Parquet for optimized analytics
+- Queried processed data using Amazon Athena
